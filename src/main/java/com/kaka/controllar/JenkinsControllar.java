@@ -19,7 +19,7 @@ public class JenkinsControllar {
 
     @RequestMapping(value = "/api/operation",method = RequestMethod.GET)
     public String doOperation(@RequestParam String name) {
-        return jenkinsService.start(name);
-//        return jenkinsService.stop(name);
+//        return jenkinsService.start(name);
+        return jenkinsService.stop(name);
     }
 }
