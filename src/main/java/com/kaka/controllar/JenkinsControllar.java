@@ -18,6 +18,6 @@ public class JenkinsControllar {
     public String doOperation(@RequestParam String name) {
 //        return jenkinsService.start(name);
 //        return jenkinsService.stop(name);
-        return "arcserve_jenkins";
+        return "arcserve_jenkins_teset";
     }
 }
