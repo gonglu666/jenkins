@@ -30,17 +30,10 @@ public class JenkinsService {
             executorService.execute(new Runnable() {
                 @Override
                 public void run() {
-                    if(finalI %4==0) {
                         while(true) {
                             System.out.println(Thread.currentThread().getName()+"--"+finalI+" is running");
-                            try {
-                                Thread.sleep(500);
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            }
+
                         }
-                    }
-                    System.out.println(Thread.currentThread().getName()+"--"+finalI+" is running");
                 }
             });
         }
